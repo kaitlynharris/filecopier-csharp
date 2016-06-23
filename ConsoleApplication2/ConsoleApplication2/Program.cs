@@ -14,13 +14,13 @@ namespace ConsoleApplication2
             string source = @"C:\C#Projects\SourceFolder";
             string dest = @"C:\C#Projects\DestFolder";
 
-            var FileRetriever = new FileRetriever();
+            var fileRetriever = new FileRetriever();
 
-            var filesToCopy = FileRetriever.GetFilesToCopy(source);
+            var filesToCopy = fileRetriever.GetFilesToCopy(source);
 
-            var Copier = new Copier();
+            var copier = new Copier();
 
-            Copier.CopyFiles(filesToCopy, source, dest);
+            copier.CopyFiles(filesToCopy, source, dest);
 
             Console.ReadKey();
 
